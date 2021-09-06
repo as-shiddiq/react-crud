@@ -1,0 +1,27 @@
+.content {
+    width: 1000px;
+    margin: auto;
+    border : 1px solid black;
+    height: 1000px;
+}
+.post {
+    width: 225px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 20px;
+    border:2px solid bisque;
+}
+.post img{
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
