@@ -2,8 +2,15 @@
     width: 1000px;
     margin: auto;
     border : 1px solid black;
-    height: 1000px;
+    padding: 10px;
+
 }
+.content:after {
+    content: '';
+    display: block;
+    clear:both
+}
+
 .post {
     width: 225px;
     margin-top: 20px;
@@ -11,6 +18,9 @@
     float: left;
     margin-left: 20px;
     border:2px solid bisque;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
 }
 .post img{
     width: 100%;
@@ -24,4 +34,76 @@
 }
 h2{
     text-align: center;
+}
+
+.btn {
+    border : 1px solid #0004;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn.danger{
+    background-color: crimson;
+    border : 1px solid crimson;
+}
+.btn.danger:hover{
+    background-color: #a00;
+    border : 1px solid #a00;
+}
+.btn.primary{
+    background-color:purple;
+    border : 1px solid purple;
+}
+.btn.primary:hover{
+    background-color: #a0a;
+    border : 1px solid #a0a;
+}
+.btn.info{
+    background-color:blue;
+    border : 1px solid blue;
+}
+.btn.info:hover{
+    background-color: #009;
+    border : 1px solid #009;
+}
+.btn.delete{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btn.update{
+    position: absolute;
+    bottom: 0;
+}
+
+.formdata{
+    width: 600px;
+    margin: 20px auto 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px #1113;
+    padding: 10px;
+
+}
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.form-group{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-control {
+    width: calc(100% - 20px);
+    border:1px solid #eee;
+    box-shadow: 0 0 2px inset #1113;
+    border-radius: 10px;
+    padding: 10px ;
+    text-align: left;
+    font: inherit !important;
+    font-size: 1rem;
 }
